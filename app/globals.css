@@ -481,6 +481,31 @@ section {
   font-size: 13px;
   color: var(--muted);
 }
+.form-error {
+  font-size: 13px;
+  color: #f87171;
+  margin-top: -6px;
+}
+.form-success {
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 28px;
+  background: var(--bg-soft);
+  align-content: center;
+}
+.form-success h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.form-success p {
+  color: var(--muted);
+  font-size: 15px;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
 
 /* FOOTER */
 .footer {

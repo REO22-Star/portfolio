@@ -15,8 +15,8 @@ export const SITE = {
   email: "automationwithreo@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/roland-emmanuel-512206370",
   githubUrl: "https://github.com/REO22-Star/REO_AUTOMATION",
-  // Formspree endpoint — create a free form at https://formspree.io and paste the ID here.
-  formspreeId: "YOUR_FORM_ID",
+  // Formspree form ID — the part after formspree.io/f/. Create a form at https://formspree.io
+  formspreeId: "xpqvjpav",
   portraitSrc: "/portrait.jpg",
   footerCopy: "Roland Emmanuel Osaro — CRM / AI Automation",
   stats: [

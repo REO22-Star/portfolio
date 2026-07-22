@@ -1,7 +1,10 @@
+"use client";
+
+import { useForm, ValidationError } from "@formspree/react";
 import { SITE } from "@/lib/site";
 
 export default function Contact() {
-  const action = `https://formspree.io/f/${SITE.formspreeId}`;
+  const [state, handleSubmit] = useForm(SITE.formspreeId);
 
   return (
     <section id="contact">
@@ -36,26 +39,59 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form reveal" action={action} method="POST">
-            <input type="text" name="name" placeholder="Your name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Tell me about your project…"
-              required
-            />
-            <button type="submit" className="btn btn-primary">
-              Send Message
-            </button>
-            <p className="form-note">
-              Form powered by Formspree — set your form ID in lib/site.ts.
-            </p>
-          </form>
+
+          {state.succeeded ? (
+            <div className="form reveal form-success">
+              <h3>Thanks for reaching out! 🎉</h3>
+              <p>
+                Your message has been sent — I&apos;ll get back to you as soon as
+                I can.
+              </p>
+            </div>
+          ) : (
+            <form className="form reveal" onSubmit={handleSubmit}>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+                className="form-error"
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project…"
+                required
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+                className="form-error"
+              />
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={state.submitting}
+              >
+                {state.submitting ? "Sending…" : "Send Message"}
+              </button>
+              <ValidationError errors={state.errors} className="form-error" />
+            </form>
+          )}
         </div>
       </div>
     </section>
