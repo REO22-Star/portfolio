@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RevealObserver from "@/components/RevealObserver";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { SITE } from "@/lib/site";
 
 const display = Sora({
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

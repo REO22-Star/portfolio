@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="wrap">
-        <p className="eyebrow reveal">About</p>
+        <span className="section-tag reveal">About</span>
         <h2 className="section-title reveal">What I do</h2>
         <div className="about-layout">
           <div className="about-portrait reveal">

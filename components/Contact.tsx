@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="wrap">
-        <p className="eyebrow reveal">Contact</p>
+        <span className="section-tag reveal">Contact</span>
         <h2 className="section-title reveal">Let&apos;s work together</h2>
         <div className="contact-grid">
           <div className="reveal">

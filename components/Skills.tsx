@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="wrap">
-        <p className="eyebrow reveal">Skills & Tools</p>
+        <span className="section-tag reveal">Skills & Tools</span>
         <h2 className="section-title reveal">The stack I build with</h2>
         <div className="grid grid-4">
           {SKILL_GROUPS.map((g) => (

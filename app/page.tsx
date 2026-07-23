@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Automations from "@/components/Automations";
 import Process from "@/components/Process";
 import Resume from "@/components/Resume";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Automations />
       <Process />
       <Resume />
+      <Testimonials />
       <Contact />
     </main>
   );

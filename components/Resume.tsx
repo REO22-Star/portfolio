@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <section id="resume">
       <div className="wrap">
-        <p className="eyebrow reveal">Experience</p>
+        <span className="section-tag reveal">Experience</span>
         <h2 className="section-title reveal">Career snapshot</h2>
         <div className="timeline">
           {RESUME.map((r) => (

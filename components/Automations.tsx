@@ -4,7 +4,7 @@ export default function Automations() {
   return (
     <section id="automations">
       <div className="wrap">
-        <p className="eyebrow reveal">Automation Workflows</p>
+        <span className="section-tag reveal">Automation Workflows</span>
         <h2 className="section-title reveal">Production n8n builds</h2>
         <p
           className="reveal"
@@ -22,6 +22,9 @@ export default function Automations() {
         <div className="grid grid-3">
           {AUTOMATIONS.map((a) => (
             <article className="card auto-card reveal" key={a.name}>
+              <div className="auto-thumb" aria-hidden="true">
+                <span className="node-icon">&#123; n8n &#125;</span>
+              </div>
               <div className="auto-meta">
                 <span className="auto-client">{a.client}</span>
                 <span className="auto-cat">{a.category}</span>

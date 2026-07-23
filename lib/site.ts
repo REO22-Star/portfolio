@@ -17,6 +17,8 @@ export const SITE = {
   githubUrl: "https://github.com/REO22-Star/REO_AUTOMATION",
   // Formspree form ID — the part after formspree.io/f/. Create a form at https://formspree.io
   formspreeId: "xpqvjpav",
+  // WhatsApp number in international format, digits only (no +, no spaces). PLACEHOLDER — swap for the real one.
+  whatsapp: "0000000000",
   portraitSrc: "/portrait.jpg",
   footerCopy: "Roland Emmanuel Osaro — CRM / AI Automation",
   stats: [
@@ -88,6 +90,7 @@ export const PROJECTS = [
   {
     name: "JoinBrands Email & Landing System",
     category: "HubSpot • Email + CMS",
+    group: "HubSpot",
     challenge:
       "A creator-marketing platform needed a scalable email system and landing pages that non-developers could edit without breaking layout.",
     solution:
@@ -102,6 +105,7 @@ export const PROJECTS = [
   {
     name: "Chloe Consulting Email & CMS",
     category: "HubSpot • Email + Theme",
+    group: "HubSpot",
     challenge:
       "A consulting brand needed a cohesive, on-brand email suite and a rebranded website theme built from Figma designs.",
     solution:
@@ -116,6 +120,7 @@ export const PROJECTS = [
   {
     name: "Meridian Online Bank",
     category: "Next.js • Fintech Prototype",
+    group: "Web Apps",
     challenge:
       "Needed a realistic banking prototype with correct accounting and a path to real banking-as-a-service providers.",
     solution:
@@ -130,6 +135,7 @@ export const PROJECTS = [
   {
     name: "JosHomes Rental Marketplace",
     category: "Next.js • Marketplace",
+    group: "Web Apps",
     challenge:
       "Jos, Nigeria lacked a mobile-first way to browse rental vacancies; the market needed a trustworthy listings platform.",
     solution:
@@ -144,6 +150,7 @@ export const PROJECTS = [
   {
     name: "Journeys & Innfinity Email",
     category: "HubSpot • Email",
+    group: "HubSpot",
     challenge:
       "Travel and hospitality brands needed reusable, survey-ready email templates that stayed on-brand across campaigns.",
     solution:
@@ -259,5 +266,41 @@ export const RESUME = [
     title: "Automation Developer",
     org: "Independent",
     desc: "Designed workflow automations and API integrations connecting CRMs to marketing and operations tools.",
+  },
+] as const;
+
+// -----------------------------------------------------------------------------
+// PROJECT FILTER TABS — must match the `group` values used in PROJECTS above.
+// -----------------------------------------------------------------------------
+export const PROJECT_FILTERS = ["All", "HubSpot", "Web Apps"] as const;
+
+// -----------------------------------------------------------------------------
+// TESTIMONIALS — PLACEHOLDER quotes. Replace with real client feedback.
+// Until then this reads as sample content; nothing fake should go live as real.
+// -----------------------------------------------------------------------------
+export const TESTIMONIALS = [
+  {
+    quote:
+      "[Placeholder] Roland rebuilt our HubSpot workflows and cut hours of manual work every week. Clear communication and rock-solid delivery.",
+    name: "Client Name",
+    role: "Role, Company",
+    initials: "CN",
+    stars: 5,
+  },
+  {
+    quote:
+      "[Placeholder] The automation Roland built just works. It's been running in production without a hitch and saved our team real time.",
+    name: "Client Name",
+    role: "Role, Company",
+    initials: "CN",
+    stars: 5,
+  },
+  {
+    quote:
+      "[Placeholder] Fast, professional, and genuinely understands both the CRM and the code side. Would hire again in a heartbeat.",
+    name: "Client Name",
+    role: "Role, Company",
+    initials: "CN",
+    stars: 5,
   },
 ] as const;
