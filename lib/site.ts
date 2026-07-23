@@ -18,7 +18,7 @@ export const SITE = {
   // Formspree form ID — the part after formspree.io/f/. Create a form at https://formspree.io
   formspreeId: "xpqvjpav",
   // WhatsApp number in international format, digits only (no +, no spaces). PLACEHOLDER — swap for the real one.
-  whatsapp: "0000000000",
+  whatsapp: "2348137062636",
   portraitSrc: "/portrait.jpg",
   footerCopy: "Roland Emmanuel Osaro — CRM / AI Automation",
   stats: [
