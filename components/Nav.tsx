@@ -34,8 +34,19 @@ export default function Nav() {
           <a href="#skills">Skills</a>
           <a href="#work">Work</a>
           <a href="#automations">Automations</a>
+          <a href="#pricing">Pricing</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
+          {SITE.whatsapp && !/^0+$/.test(SITE.whatsapp) && (
+            <a
+              className="nav-wa"
+              href={`https://wa.me/${SITE.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message on WhatsApp
+            </a>
+          )}
         </div>
       </div>
     </nav>

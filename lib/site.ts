@@ -21,6 +21,18 @@ export const SITE = {
   whatsapp: "2348137062636",
   portraitSrc: "/portrait.jpg",
   footerCopy: "Roland Emmanuel Osaro — CRM / AI Automation",
+  location: "Nigeria",
+  // Hero status pill (top of the page)
+  availability: "Available for new projects",
+  // Hero typewriter — cycles through these roles under the name
+  roles: [
+    "HubSpot Developer",
+    "CRM Architect",
+    "AI Automation Engineer",
+    "Next.js Developer",
+  ],
+  // Small floating badge on the portrait
+  portraitBadge: "Building automations right now",
   stats: [
     { num: "20+", label: "Projects Delivered" },
     { num: "12+", label: "Workflows Automated" },
@@ -304,3 +316,72 @@ export const TESTIMONIALS = [
     stars: 5,
   },
 ] as const;
+
+// -----------------------------------------------------------------------------
+// PRICING / SERVICE PACKAGES
+// PLACEHOLDER prices marked [EDIT] — set your real starting prices, or change
+// the `price` to "Custom" to hide a number. `popular: true` adds the badge.
+// -----------------------------------------------------------------------------
+export const PRICING = [
+  {
+    name: "Single Workflow",
+    blurb: "One focused automation, built and handed over clean.",
+    price: "$350", // [EDIT]
+    priceNote: "starting",
+    features: [
+      "1 workflow (email, sheets, or forms)",
+      "Up to 2 app integrations",
+      "Testing with real data",
+      "Handover walkthrough & docs",
+    ],
+    cta: "Request a Quote",
+    popular: false,
+  },
+  {
+    name: "Automation Suite",
+    blurb: "Multiple connected workflows across your business.",
+    price: "$900", // [EDIT]
+    priceNote: "starting",
+    features: [
+      "3–5 connected workflows",
+      "AI agent or chatbot add-on",
+      "Error handling & monitoring setup",
+      "30 days of post-launch support",
+    ],
+    cta: "Book a Discovery Call",
+    popular: true,
+  },
+  {
+    name: "AI & CRM Systems",
+    blurb: "Chatbots, CRM builds, and AI agents for sales or support.",
+    price: "Custom",
+    priceNote: "quote",
+    features: [
+      "AI chatbot, CRM, or voice agent",
+      "HubSpot / CRM & calendar integration",
+      "Custom conversation design",
+      "Ongoing retainer available",
+    ],
+    cta: "Request a Quote",
+    popular: false,
+  },
+] as const;
+
+// -----------------------------------------------------------------------------
+// FOOTER NAV COLUMNS
+// -----------------------------------------------------------------------------
+export const FOOTER_LINKS = {
+  sitemap: [
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Work", href: "#work" },
+    { label: "Automations", href: "#automations" },
+    { label: "Pricing", href: "#pricing" },
+  ],
+  company: [
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
+    { label: "GitHub", href: SITE.githubUrl },
+    { label: "LinkedIn", href: SITE.linkedinUrl },
+  ],
+} as const;
