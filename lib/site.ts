@@ -100,6 +100,23 @@ export const SKILL_GROUPS = [
 // -----------------------------------------------------------------------------
 export const PROJECTS = [
   {
+    name: "Chloe Consulting Website",
+    category: "HubSpot CMS • Live Production Site",
+    group: "HubSpot",
+    role: "Development (design by the Chloe Consulting team & graphic designer)",
+    liveUrl: "https://chloeconsulting.co",
+    challenge:
+      "A B2B RevOps consultancy needed a production website that could explain a technical HubSpot + AI offering to non-technical buyers, carry a distinctive brand voice, and be updated by the team without a developer.",
+    solution:
+      "Developed the approved designs into a custom HubSpot CMS theme — building modular, client-editable sections for the specialty pillars, the pain-point solutions block, the testimonial system, and conversion CTAs, with responsive layouts across every breakpoint.",
+    tech: ["HubSpot CMS", "HubL", "Custom Modules", "Responsive CSS"],
+    results: [
+      "Live production site on a custom domain",
+      "8 client testimonials integrated as social proof",
+      "Modular sections the team edits without a developer",
+    ],
+  },
+  {
     name: "JoinBrands Email & Landing System",
     category: "HubSpot • Email + CMS",
     group: "HubSpot",
@@ -115,16 +132,16 @@ export const PROJECTS = [
     ],
   },
   {
-    name: "Chloe Consulting Email & CMS",
-    category: "HubSpot • Email + Theme",
+    name: "Chloe Consulting Email Suite",
+    category: "HubSpot • Marketing Email",
     group: "HubSpot",
     challenge:
-      "A consulting brand needed a cohesive, on-brand email suite and a rebranded website theme built from Figma designs.",
+      "The same brand needed a cohesive, on-brand email suite built from Figma designs that marketers could edit without breaking layout.",
     solution:
-      "Delivered 6 drag-and-drop email templates (custom hero, feature-row, and footer modules) and a standalone React CMS theme, all editor-friendly with uploadable image fields.",
-    tech: ["HubSpot CMS", "React", "Marketing Email", "Figma"],
+      "Delivered 6 drag-and-drop email templates with custom hero, feature-row, and footer modules — every image an uploadable field and all copy editable directly in the email editor.",
+    tech: ["HubSpot CMS", "Marketing Email", "Drag-and-Drop", "Figma"],
     results: [
-      "6 branded email templates + full site theme",
+      "6 branded, reusable email templates",
       "Fully client-editable content fields",
       "[FILL IN]% open-rate improvement",
     ],

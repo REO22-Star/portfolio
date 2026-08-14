@@ -537,6 +537,25 @@ section {
   margin-top: 18px;
 }
 
+.project .role {
+  font-size: 14px;
+  color: var(--muted);
+  margin: -6px 0 18px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--purple-light, var(--accent));
+  transition: transform 0.15s, opacity 0.2s;
+}
+.project-link:hover {
+  opacity: 0.85;
+  transform: translateX(3px);
+}
+
 /* PROCESS */
 .process-row {
   display: flex;

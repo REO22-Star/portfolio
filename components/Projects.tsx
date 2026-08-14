@@ -33,6 +33,7 @@ export default function Projects() {
           <article className="project reveal in" key={p.name}>
             <p className="cat">{p.category}</p>
             <h3>{p.name}</h3>
+            {"role" in p && p.role && <p className="role">Role: {p.role}</p>}
             <div className="block">
               <div className="lbl">Challenge</div>
               <p>{p.challenge}</p>
@@ -56,6 +57,16 @@ export default function Projects() {
                 </span>
               ))}
             </div>
+            {"liveUrl" in p && p.liveUrl && (
+              <a
+                className="project-link"
+                href={p.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View live site →
+              </a>
+            )}
           </article>
         ))}
       </div>
