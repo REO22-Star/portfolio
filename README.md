@@ -7,7 +7,7 @@ A Next.js (App Router, TypeScript) portfolio site. All swappable content lives i
 Open [`lib/site.ts`](lib/site.ts). Notable things to fill in:
 
 - **`formspreeId`** — the contact form uses [Formspree](https://formspree.io) (free, no backend). Create a form, copy its ID (the part after `formspree.io/f/`), and paste it in. Until then the form shows a friendly "not configured" message.
-- **Metrics marked `[FILL IN]`** — the case studies ship with real project descriptions but placeholder numbers. Replace them with real results.
+- **Case study results** — each project lists factual capability statements rather than invented metrics. Swap in real numbers (open rates, time saved, volumes) as you measure them.
 - **Portrait** — replace `public/portrait.jpg` with your photo (square works best).
 
 ## Develop

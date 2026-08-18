@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // SINGLE SOURCE OF TRUTH
 // Everything swappable lives here. Edit this file to update the whole site.
-// Metrics marked [FILL IN] are placeholders — replace with real numbers.
 // -----------------------------------------------------------------------------
 
 export const SITE = {
@@ -96,7 +95,7 @@ export const SKILL_GROUPS = [
 
 // -----------------------------------------------------------------------------
 // FEATURED PROJECTS / CASE STUDIES
-// Results are placeholders — replace [FILL IN] with real metrics.
+// Results are factual capability statements. Swap in real metrics when you have them.
 // -----------------------------------------------------------------------------
 export const PROJECTS = [
   {
@@ -127,8 +126,8 @@ export const PROJECTS = [
     tech: ["HubSpot CMS", "HubL", "Drag-and-Drop Email", "Responsive"],
     results: [
       "16 reusable email templates shipped to production",
-      "[FILL IN]% reduction in template edit time",
-      "[FILL IN] landing pages launched",
+      "Preview text + editable body areas on every template",
+      "Multi-page landing theme live in production",
     ],
   },
   {
@@ -142,8 +141,8 @@ export const PROJECTS = [
     tech: ["HubSpot CMS", "Marketing Email", "Drag-and-Drop", "Figma"],
     results: [
       "6 branded, reusable email templates",
-      "Fully client-editable content fields",
-      "[FILL IN]% open-rate improvement",
+      "Custom hero, feature-row and footer modules",
+      "Every image and copy block client-editable",
     ],
   },
   {
@@ -158,22 +157,23 @@ export const PROJECTS = [
     results: [
       "Double-entry ledger with provider abstraction",
       "Auth + accounts + transactions flow",
-      "[FILL IN] transactions modeled",
+      "Pluggable BaaS-provider seam for real bank integration",
     ],
   },
   {
     name: "JosHomes Rental Marketplace",
     category: "Next.js • Marketplace",
     group: "Web Apps",
+    liveUrl: "https://jos-homes.vercel.app/",
     challenge:
-      "Jos, Nigeria lacked a mobile-first way to browse rental vacancies; the market needed a trustworthy listings platform.",
+      "Renting in Jos, Nigeria runs on WhatsApp groups and word of mouth, and upfront “agent fees” paid before viewing are a common way tenants get defrauded. The market needed a mobile-first listings platform built around that trust problem, not just a search box.",
     solution:
-      "Delivered a milestone-driven, mobile-first marketplace — public prototype first, then a roadmap toward auth, roles, and a Supabase backend.",
+      "Designed the product around an inspection-fee-only model that discourages advance payments, then built it as a Next.js app: listings searchable by type, area, bedrooms and annual rent, verified-agent badges, photo galleries and direct landlord contact — with a roadmap to Supabase auth and roles.",
     tech: ["Next.js", "Supabase", "Mobile-First", "TypeScript"],
     results: [
-      "Public prototype shipped (Milestone 0)",
-      "Roadmap to auth + roles + live data",
-      "[FILL IN] listings supported",
+      "Live public prototype (Milestone 0) running on demo data",
+      "Anti-fraud inspection-fee model baked into the flow",
+      "Residential + commercial categories priced in ₦/year",
     ],
   },
   {
@@ -188,7 +188,7 @@ export const PROJECTS = [
     results: [
       "Multiple reusable template sets delivered",
       "Survey/feedback modules included",
-      "[FILL IN] campaigns supported",
+      "Deployed across two travel and hospitality brands",
     ],
   },
 ] as const;
