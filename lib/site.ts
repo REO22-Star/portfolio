@@ -304,35 +304,34 @@ export const RESUME = [
 export const PROJECT_FILTERS = ["All", "HubSpot", "Web Apps"] as const;
 
 // -----------------------------------------------------------------------------
-// TESTIMONIALS — PLACEHOLDER quotes. Replace with real client feedback.
-// Until then this reads as sample content; nothing fake should go live as real.
+// TESTIMONIALS — real, verifiable quotes only (quote text kept verbatim).
+// `stars` is optional: only set it when the source actually gave a rating
+// (e.g. an Upwork review). LinkedIn recommendations have no star rating.
+// `context` is the relationship line shown under the role.
 // -----------------------------------------------------------------------------
-export const TESTIMONIALS = [
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+  initials: string;
+  context?: string;
+  stars?: number;
+  sourceLabel?: string;
+  sourceUrl?: string;
+};
+
+export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "[Placeholder] Roland rebuilt our HubSpot workflows and cut hours of manual work every week. Clear communication and rock-solid delivery.",
-    name: "Client Name",
-    role: "Role, Company",
-    initials: "CN",
-    stars: 5,
+      "He's focused and detail oriented. Pays attention to the little ideas that could be missed but makes a great impact if engaged. You will do well to give him a chance. Honestly, you will be happy you did!",
+    name: "Gideon Ofeimun",
+    role: "Startup Systems & Data Optimization Specialist",
+    initials: "GO",
+    context: "Worked with Roland on the same team",
+    sourceLabel: "LinkedIn recommendation",
+    sourceUrl: "https://www.linkedin.com/in/roland-emmanuel-512206370/details/recommendations/",
   },
-  {
-    quote:
-      "[Placeholder] The automation Roland built just works. It's been running in production without a hitch and saved our team real time.",
-    name: "Client Name",
-    role: "Role, Company",
-    initials: "CN",
-    stars: 5,
-  },
-  {
-    quote:
-      "[Placeholder] Fast, professional, and genuinely understands both the CRM and the code side. Would hire again in a heartbeat.",
-    name: "Client Name",
-    role: "Role, Company",
-    initials: "CN",
-    stars: 5,
-  },
-] as const;
+];
 
 // -----------------------------------------------------------------------------
 // PRICING / SERVICE PACKAGES

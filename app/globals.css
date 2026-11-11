@@ -858,6 +858,54 @@ section {
   font-size: 13px;
   color: var(--muted);
 }
+.t-card {
+  margin: 0;
+}
+.t-card blockquote {
+  margin: 0 0 20px;
+}
+.t-mark {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  line-height: 0.8;
+  color: var(--purple-light);
+  margin-bottom: 8px;
+}
+.t-context {
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.85;
+}
+.t-source {
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--purple-light);
+  text-decoration: none;
+  align-self: flex-start;
+}
+.t-source:hover {
+  text-decoration: underline;
+}
+/* One testimonial: a single centred feature card instead of a lone grid cell */
+.t-single {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.t-single .t-card {
+  padding: 34px;
+}
+.t-single .t-quote {
+  font-size: 18px;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .t-single .t-card {
+    padding: 24px;
+  }
+  .t-single .t-quote {
+    font-size: 16px;
+  }
+}
 
 /* FLOATING WHATSAPP BUTTON */
 .wa-float {
